@@ -1,3 +1,4 @@
+<h1>{{details.name}}</h1>
 <md-grid-list cols="4">
   <md-grid-tile>
     <md-card id="card1">
@@ -44,8 +45,7 @@
       <div class="col-md-6">
         <div style="display: block;">
           <canvas baseChart width="400" height="150" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
-            [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType" (chartHover)="chartHovered($event)"
-            (chartClick)="chartClicked($event)"></canvas>
+            [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType"></canvas>
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@
   <md-grid-tile>
     <md-card>
       <md-card-title>Distribution of different states</md-card-title>
-      <img class="stats1" md-card-image src="assets/stats1.png" />
+      <img class="stats1" md-card-image src="https://raw.githubusercontent.com/panjiegary/alc-ibm-hackathon/master/src/assets/stats1.png" />
       <span></span>
     </md-card>
   </md-grid-tile>
@@ -76,13 +76,13 @@
 <md-grid-list cols="2">
   <md-grid-tile>
     <md-card>
-      <img class="stats2" md-card-image src="assets/stats4.png" />
+      <img class="stats2" md-card-image src="https://raw.githubusercontent.com/panjiegary/alc-ibm-hackathon/master/src/assets/stats4.png" />
     </md-card>
   </md-grid-tile>
   <md-grid-tile>
     <md-card>
       <md-card-title>Sales of different games</md-card-title>
-      <img class="stats3" md-card-image src="assets/stats3.png" />
+      <img class="stats3" md-card-image src="https://raw.githubusercontent.com/panjiegary/alc-ibm-hackathon/master/src/assets/stats3.png" />
     </md-card>
   </md-grid-tile>
 </md-grid-list>
