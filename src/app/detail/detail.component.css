@@ -1,0 +1,48 @@
+p {
+    font-style: italic;
+}
+
+.stats1 {
+    width: 479px;
+    height: 474px;
+}
+
+.stats2 {
+    width: 480px;
+    height: 288px;
+}
+
+.stats3 {
+    width: 367px;
+    height: 366px;
+}
+
+md-card-footer {
+    padding-left: 25px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+md-card {
+    margin-bottom: 10px;
+}
+
+#card1 {
+    background: #b1cbbb;
+    color: white;
+}
+
+#card2 {
+    background: #62bcfa;
+    color: white;
+}
+
+#card3 {
+    background: #fccdd3;
+    color: white;
+}
+
+#card4 {
+    background: #bbc4ef;
+    color: white;
+}

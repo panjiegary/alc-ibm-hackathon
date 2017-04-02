@@ -1,0 +1,88 @@
+<md-grid-list cols="4">
+  <md-grid-tile>
+    <md-card id="card1">
+      <md-card-title>Received Package</md-card-title>
+      <md-card-content>
+        <h2>{{details.received}}</h2>
+      </md-card-content>
+      <md-card-footer></md-card-footer>
+    </md-card>
+  </md-grid-tile>
+  <md-grid-tile>
+    <md-card id="card2">
+      <md-card-title>Fully Sold Package</md-card-title>
+      <md-card-content>
+        <h2>{{details.fullySold}}</h2>
+      </md-card-content>
+      <md-card-footer></md-card-footer>
+    </md-card>
+  </md-grid-tile>
+  <md-grid-tile>
+    <md-card id="card3">
+      <md-card-title>Return Pending</md-card-title>
+      <md-card-content>
+        <h2>{{details.pending}}</h2>
+      </md-card-content>
+      <md-card-footer></md-card-footer>
+    </md-card>
+  </md-grid-tile>
+  <md-grid-tile>
+    <md-card id="card4">
+      <md-card-title>Days to Completion</md-card-title>
+      <md-card-content>
+        <h2>{{details.timeToSold}}</h2>
+      </md-card-content>
+      <md-card-footer></md-card-footer>
+    </md-card>
+  </md-grid-tile>
+</md-grid-list>
+
+<md-card>
+  <md-card-title>Ticket Sales Per Day</md-card-title>
+  <md-card-content>
+    <div class="row">
+      <div class="col-md-6">
+        <div style="display: block;">
+          <canvas baseChart width="400" height="150" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
+            [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType" (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+    </div>
+  </md-card-content>
+</md-card>
+
+<md-grid-list cols="2">
+  <md-grid-tile>
+    <md-card>
+      <md-card-title>Distribution of different states</md-card-title>
+      <img class="stats1" md-card-image src="assets/stats1.png" />
+      <span></span>
+    </md-card>
+  </md-grid-tile>
+  <md-grid-tile>
+    <md-card id="overallCard">
+      <md-card-title>Overall Sales</md-card-title>
+      <md-card-content>
+        <div style="display: block">
+          <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType"></canvas>
+        </div>
+      </md-card-content>
+    </md-card>
+  </md-grid-tile>
+</md-grid-list>
+
+
+<md-grid-list cols="2">
+  <md-grid-tile>
+    <md-card>
+      <img class="stats2" md-card-image src="assets/stats4.png" />
+    </md-card>
+  </md-grid-tile>
+  <md-grid-tile>
+    <md-card>
+      <md-card-title>Sales of different games</md-card-title>
+      <img class="stats3" md-card-image src="assets/stats3.png" />
+    </md-card>
+  </md-grid-tile>
+</md-grid-list>
